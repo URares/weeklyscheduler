@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div id="container"></div>
+    <div id="summary"></div>
+
+    <template id="dayTpl">
+      <div>
+        <h1 id="dayName"></h1>
+        <div id="morning"></div>
+        <br />
+        <div id="evening"></div>
+        <br />
+        <button id="nextBtn">Next</button>
+        <button id="prevBtn">Previous</button>
+        <button id="summaryBtn">Summary</button>
+      </div>
+    </template>
+
+    <template id="activityTpl">
+      <fieldset>
+        <legend id="activityName">Dimineata</legend>
+        <form>
+          <input id="start" type="text" /><br />
+          <input id="end" type="text" /><br />
+          <input id="type" type="text" /><br />
+        </form>
+      </fieldset>
+    </template>
+
+    <template id="summaryTpl">
+      <div id="summaryView">
+        <div id="activityList"></div>
+
+        <hr />
+        <div class="summary-footer">
+          <div>Calorii consumate: 400</div>
+          <div>Total timp: 20h</div>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
